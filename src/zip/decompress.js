@@ -5,7 +5,7 @@ export const decompress = async () => {
     const stream = await import('stream')
 
     const readFile = path.resolve('src','zip','files','archive.gz');
-    const destinationFile = path.resolve('src','zip','files','fileToCompress1.txt');
+    const destinationFile = path.resolve('src','zip','files','fileToCompress.txt');
     
     stream.pipeline(
         fs.createReadStream(readFile),
