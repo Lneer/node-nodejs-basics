@@ -6,5 +6,7 @@ export const remove = async () => {
     await fs.rm(deleteFile).catch((err) => { throw new Error ('FS operation failed')})
   } catch (error) {
     console.error(error.message);
+    console.log('file already removed')
   }
 };
+remove();

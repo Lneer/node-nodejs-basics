@@ -12,3 +12,4 @@ export const read = async () => {
         throw new Error ('Error read file')
       })
 };
+read();

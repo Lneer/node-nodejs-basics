@@ -13,9 +13,11 @@ export const create = async () => {
     switch(err.message){
       case 'don\'t try to deceive me' : 
         console.error(err.message);
+        console.log('dir with name "fresh.txt" is exist')
         break;
       case 'FS operation failed':
         console.error(err.message);
+        console.log('file already exist')
         break;
 
       default:

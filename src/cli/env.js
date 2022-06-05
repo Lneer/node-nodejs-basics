@@ -8,4 +8,3 @@ export const parseEnv = () => {
     }
     console.log(result.slice(0, result.length-2))
 };
-parseEnv();

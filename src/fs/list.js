@@ -11,3 +11,4 @@ export const list = async () => {
       console.error(error.message);
     }
 };
+list();
